@@ -10,7 +10,7 @@
 <body>
 	
 	<header class="header">
-		<a href="#" class="header-logo">
+		<a href="<?= get_home_url(); ?>" class="header-logo">
 			<img src="<?= get_template_directory_uri(); ?>/img/logo.svg" alt="">
 		</a>
 
