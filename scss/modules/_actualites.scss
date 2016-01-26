@@ -1,0 +1,111 @@
+article{
+	margin-bottom: 40px;
+	border-bottom: 1px solid #d0d6d6;
+	padding-bottom: 40px;
+
+
+	.material-icons{
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 4px 4px 2px;
+    	color: #2196F3;
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+
+		&:hover{
+			color: #2196F3;
+		}
+	}
+
+	.suite{
+		position: absolute;
+		right: 2rem;
+	}
+}
+
+.partenaires{
+	background: #2196F3;
+	padding: 0 40px;
+
+	h3{
+		padding: 20px;
+		text-align: center;	
+	}
+
+	.partenaires-slider{
+		width: 100%;
+		padding: 10px 0 40px;
+		margin: 0 auto;
+	}
+
+	.partenaire{
+		display: table-cell;
+		border: 1px solid #CCCCCC;
+		border-radius: 4px;
+		padding: 10px;
+		height: 80px;
+		width: 80px;
+	}
+
+	.owl-nav{
+		position: absolute;
+		top: -80px;
+		right: 0;
+	}
+
+	.owl-prev, .owl-next{
+  		background: #CCCCCC;
+		border-radius: 4px;
+		width: 2rem;
+ 		height: 2rem;
+  		line-height: 3;
+
+  		&:hover{
+  			background: white;
+  		}
+  	}
+
+	.owl-prev{
+  		left: 0;
+  		margin-left: 5px;
+  	}
+
+  	.owl-next{
+  		right: 0;
+  	}
+}
+
+.pagination{
+	text-align: center;
+
+	.nav{
+		padding: 0;
+		margin-top: 2px;
+		vertical-align: middle;
+		background: #CCCCCC;
+		line-height: 3;
+		width: 2rem;
+ 		height: 2rem;
+	}
+
+
+	a{
+		display: inline-block;
+		background: #CCCCCC;
+		text-decoration: none;
+		color: black;
+		padding: 0.6rem 0.8rem;
+		margin-right: 4px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		&:hover{
+			background: #2196F3;
+		}
+	}
+}

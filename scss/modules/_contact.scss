@@ -1,0 +1,30 @@
+form {
+	padding: $page_padding;
+
+	textarea{		
+		border-style: inset;
+	}
+
+	input, textarea{
+		display: block;
+		width: 100%;
+		margin-top: 1em;
+		border: 2px solid #CCCCCC;
+		padding: 1rem; 
+	}
+}
+
+.contact{	
+	font-family: 'Roboto', sans-serif;
+	padding: $page_padding;
+
+	li{
+		list-style: none;
+		margin-bottom: 1rem;
+	}
+
+	p{
+		margin: 0;
+		padding: 0 1rem;
+	}
+}

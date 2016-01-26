@@ -1,0 +1,64 @@
+.main{
+
+	.burger{
+		background: none;
+		border: none;
+		width: 3rem;
+		height: 3rem;
+		font-size: 36px;
+		cursor: pointer;
+
+		@include desktop{
+			display: none;
+		}
+	}
+
+	.title{
+		background-color: rgba(33,150,243, 1);
+		z-index: 2;
+		position: fixed;
+		width: 100%;
+		height: $title_height;
+		line-height: $title_height;
+
+		h1{
+			display: inline-block;
+			color: white;
+			padding: 0;
+			margin: 0;
+		}
+
+		@include desktop{
+			position: static;
+
+			h1{
+				margin-left: 40px;
+			}
+		}
+	}
+
+	.slider{
+
+		@include desktop{
+			padding-top: 0;
+		}
+	}
+
+	.owl-prev, .owl-next{
+		position: absolute;
+		top: 50%;
+		color: white;
+		border-radius: 50%;
+ 		width: 1.5rem;
+ 		height: 1.5rem;
+  		line-height: 1.5;
+  		text-align: center;
+    	color: #333333;
+  		background: #DDDDDD;
+	}
+
+	.owl-prev{
+		right: 0;
+	}
+}
+

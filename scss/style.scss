@@ -1,0 +1,28 @@
+/*
+Theme Name: Vespas
+Author: Tika
+Description: Thème fait pour le Vespas Handball de Vouillé fait pendant le stage
+Version: 1.0
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,900,700|Material+Icons);
+
+@import "modules/normalize";
+@import "modules/settings";
+@import "modules/responsive";
+@import "modules/global";
+@import "modules/header";
+@import "modules/main";
+@import "modules/footer";
+@import "modules/icons";
+@import "modules/cards";
+@import "modules/joueur";
+@import "modules/contact";
+@import "modules/galerie";
+@import "modules/actualites";
+@import "plugins/owl";
+@import "plugins/magnific-popup.scss";
+
+
+
+

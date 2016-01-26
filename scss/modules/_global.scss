@@ -1,0 +1,59 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+body {
+	background-color: white;
+	margin: 0 auto;
+
+    @include desktop{
+        padding-left: 280px;
+    }
+
+}
+
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+
+img{
+	display: block;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.gotop{
+    display: block;
+    position: fixed;
+    background: purple;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+
+    .material-icons{
+    	color: black;
+    	font-size: 40px;
+    	line-height: 40px;
+    }
+}
+
+.gotop-visible{
+	opacity: 1;
+}
+
+.pt{
+    padding-top: $title_height;
+}

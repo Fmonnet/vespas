@@ -1,0 +1,82 @@
+.header-menu a, .header-contact a, h1, footer{
+	font-family: 'Roboto', sans-serif;
+}
+
+.header{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 3;
+	width: 280px;
+	left: -280px;
+	background-color: rgba(175,202,11,1);
+	transition: 0.3s;
+	overflow-y: scroll;
+
+	.header-logo{
+		display: block;
+		padding: 0 4rem;
+	}
+
+	.header-menu{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.header-menu a, .header-contact a{
+		text-decoration: none;
+		list-style: none;
+		font-weight: 600;
+		color: black;
+	}
+
+	.header-menu a{
+		color: #333333;
+		padding: 1rem;
+		text-transform: uppercase;
+	}
+
+	.header-contact	a{
+		display: inline-block;
+		padding: 1.8rem 1.8rem;
+	}
+
+	@include desktop{
+		display: block;
+		left: 0;
+		overflow-y: inherit;
+	}
+}
+
+.header-visible{
+	left: 0;
+	box-shadow: 1px 1px 10px grey;
+
+	@include desktop{
+		display: none;
+	}
+}
+
+.overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+	width: 100%;
+	background-color: rgba(0,0,0,0.8);
+	transition: 0.3s;
+
+	@include desktop{
+		display: none;
+	}
+}
+
+.overlay-visible{
+	display: block;
+
+	@include desktop{
+		display: none;
+	}	
+}
