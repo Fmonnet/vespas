@@ -9,6 +9,7 @@
 	
 	@include desktop{
 		padding-top: 0;
+		flex-direction: row;
 	}
 }
 
@@ -38,6 +39,10 @@
 		display: block;
 		width: 100%;
 		height: auto;
+	}
+
+	@include desktop{
+		width: 25%;
 	}
 }
 

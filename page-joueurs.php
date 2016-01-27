@@ -7,13 +7,12 @@
 
 $query = new WP_Query();
 
-$all_pages = $query->query(array('post_type' => 'page'));
+$all_pages = $query->query(array('post_type' => 'page','posts_per_page'=> -1));
 
 $page_actuelle = $post->ID;
 
 // Filtre les enfants de la page actuelle
 $joueurs = get_page_children($page_actuelle, $all_pages);
-
 get_header();
 ?>
 
