@@ -5,7 +5,17 @@
 		<i class="material-icons">menu</i>
 	</button>
 
-	<h1><?php echo the_title(); ?></h1>
+	<h1>
+		<?php
+		if (is_front_page()) {
+			echo get_bloginfo('name');
+		}
+		else {
+			echo the_title();
+		}
+		 
+		?>
+	</h1>
 </section>
 
 <?php if ( have_posts() ) : ?>
