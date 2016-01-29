@@ -21,7 +21,8 @@ $(function() {
     	navText: ['<i class="material-icons">keyboard_arrow_right</i>','<i class="material-icons">keyboard_arrow_left</i>']
     });
 
-    $('.gallery-item').magnificPopup({type:'image',
+    $('.galerie').magnificPopup({type:'image',
+        delegate: 'a',
         gallery:{
         enabled:true
     }});

@@ -14,4 +14,30 @@
 			width: 100%;
 		}
 	}
-}	
+}
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+}
+
+.galerie-item {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+
+  img {
+    width: 100%;
+    height:auto;
+  }
+}
+
+$max_columns: 9;
+
+@for $i from 1 to $max_columns {
+	.galerie-#{$i} > * {
+		width:calc(100% / #{$i} - 1rem);
+	}
+}
+
+
