@@ -17,7 +17,7 @@ function get_slideShow()
 {
 
 	//initialise le retour html
-	$html='<div class="slider pt">';
+	$html='<div class="slider">';
 
 
 	//récupère en base de données tous les post de type 'slider'

@@ -400,7 +400,7 @@ ul {
   opacity: 1; }
 
 .pt {
-  padding-top: 60px; }
+  padding: 60px 1rem 1rem 1rem; }
 
 .header-menu a, .header-contact a, h1, footer {
   font-family: 'Roboto', sans-serif; }
@@ -502,9 +502,11 @@ ul {
       .main .title h1 {
         margin-left: 40px; } }
 
-@media (min-width: 1025px) {
-  .main .slider {
-    padding-top: 0; } }
+.main .slider {
+  padding-top: 60px; }
+  @media (min-width: 1025px) {
+    .main .slider {
+      padding-top: 0; } }
 
 .main .owl-prev, .main .owl-next {
   position: absolute;
