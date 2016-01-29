@@ -23,6 +23,9 @@
 
 		h1{
 			display: inline-block;
+			font-size: 18px;
+			line-height: $title_height;
+			vertical-align: top;
 			color: white;
 			padding: 0;
 			margin: 0;

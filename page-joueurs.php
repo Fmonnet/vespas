@@ -35,7 +35,7 @@ get_header();
 
                     <div class="card-description">
                         <?php $metas = get_post_meta($joueur->ID); ?>
-                        <?php preg_match("[0-9]{4}", $metas['date'][0], $result);
+                        <?php preg_match("#[0-9]{4}#", $metas['date'][0], $result);
                         var_dump($result); ?>
 
                        
