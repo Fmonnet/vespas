@@ -7,7 +7,7 @@
 
 $query = new WP_Query();
 
-$all_pages = $query->query(array('post_type' => 'page','posts_per_page'=> -1));
+$all_pages = $query->query(array('post_type' => 'page', 'posts_per_page' => -1));
 
 $page_actuelle = $post->ID;
 
@@ -35,12 +35,14 @@ get_header();
 
                     <div class="card-description">
                         <?php $metas = get_post_meta($joueur->ID); ?>
-                        <?php preg_match("[0-9]{4}", $metas['date'][0], $result);
-                        var_dump($result); ?>
+                        <?php
+                        preg_match("#[0-9]{4}#", $metas['date'][0], $result);
+                        $annee = $result[0];
+                        ?>
 
-                       
+
                         <span><i class="material-icons cake">cake</i><span
-                                class="text-description"><?= $metas['date'][0]; ?></span></span>
+                                class="text-description"><?= $annee; ?></span></span>
                         <span><i class="material-icons">vertical_align_top</i><span
                                 class="text-description"><?= $metas['taille'][0]; ?></span></span>
                         <span><i class="material-icons">pan_tool</i><span
