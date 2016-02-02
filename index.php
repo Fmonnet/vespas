@@ -1,10 +1,6 @@
 <?php get_header(); ?>
 
 <section class="title">
-	<button id="burger" class="burger">
-		<i class="material-icons">menu</i>
-	</button>
-
 	<h1>
 		<?php
 		if (is_front_page()) {
@@ -16,6 +12,9 @@
 		 
 		?>
 	</h1>
+	<button id="burger" class="burger">
+		<i class="material-icons">menu</i>
+	</button>
 </section>
 
 <?php if ( have_posts() ) : ?>
