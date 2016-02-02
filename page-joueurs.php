@@ -31,7 +31,14 @@ get_header();
             <a href="<?= get_permalink($joueur->ID);?>" class="card">
 
                 <div class="card-image">
-                    <?= get_the_post_thumbnail($joueur->ID,'joueur_mini'); ?>
+
+                    <?php
+                        if(!empty(get_the_post_thumbnail($joueur->ID,'joueur_mini'))){
+                            echo get_the_post_thumbnail($joueur->ID,'joueur_mini');
+                        } else {
+                            echo '<img src="'.get_template_directory_uri().'/img/joueur-default.jpg">';
+                        }
+                    ?>
 
                     <div class="card-description">
                         <?php $metas = get_post_meta($joueur->ID); ?>
