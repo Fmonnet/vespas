@@ -15,7 +15,9 @@
 
   .header-inner {
     padding-bottom: 60px;
+    min-height:100%;
     position: relative;
+
   }
 
   .header-logo {
@@ -52,12 +54,25 @@
     left: 0;
     right: 0;
     padding: 1rem;
+    text-align: center;
+    margin-left: -1rem;
+
     a {
       display: inline-block;
       text-align: center;
+      padding: 1rem;
+      margin-left: 1rem;
+      color:#424242;
+      border-radius: 50%;
+      transition: all .3s;
 
       .material-icons{
-       color:#424242;
+       color:inherit;
+      }
+
+      &:hover, &:focus {
+        background-color:#FAFAFA;
+        color:#afca0b;
       }
     }
   }

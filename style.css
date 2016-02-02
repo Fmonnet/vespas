@@ -416,7 +416,9 @@ ul {
   transition: 0.3s;
   overflow-y: scroll; }
   .header .header-inner {
-    padding-bottom: 60px; }
+    padding-bottom: 60px;
+    min-height: 100%;
+    position: relative; }
   .header .header-logo {
     display: block;
     padding: 1rem 3rem; }
@@ -445,12 +447,22 @@ ul {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 1rem; }
+    padding: 1rem;
+    text-align: center;
+    margin-left: -1rem; }
     .header .header-contact a {
       display: inline-block;
-      text-align: center; }
+      text-align: center;
+      padding: 1rem;
+      margin-left: 1rem;
+      color: #424242;
+      border-radius: 50%;
+      transition: all .3s; }
       .header .header-contact a .material-icons {
-        color: #424242; }
+        color: inherit; }
+      .header .header-contact a:hover, .header .header-contact a:focus {
+        background-color: #FAFAFA;
+        color: #afca0b; }
   @media (min-width: 1025px) {
     .header {
       display: block;
