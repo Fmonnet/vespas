@@ -28,7 +28,7 @@ get_header();
 
         <?php foreach ($joueurs as $joueur): ?>
 
-            <a href="#" class="card">
+            <a href="<?= get_permalink($joueur->ID);?>" class="card">
 
                 <div class="card-image">
                     <?= get_the_post_thumbnail($joueur->ID); ?>
