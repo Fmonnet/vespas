@@ -48,6 +48,6 @@ $(function() {
 
         $('html,body').animate({
           scrollTop: 1
-        }, 1500);
+        }, 500);
     });
 });

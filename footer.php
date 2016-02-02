@@ -38,7 +38,7 @@
 	</footer>
 
 	<div class="overlay"></div>
-	<a class="gotop" href="#"><i class="material-icons">arrow_drop_up</i></a>
+	<a class="gotop" href="#"><i class="material-icons">keyboard_arrow_up</i></a>
 	
 	<script src="<?= get_template_directory_uri(); ?>/js/app.min.js"></script>
 

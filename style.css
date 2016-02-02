@@ -357,7 +357,8 @@ th {
   padding: 0; }
 
 *, *:before, *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: none; }
 
 body {
   background-color: white;
@@ -412,7 +413,7 @@ ul {
   z-index: 3;
   width: 280px;
   left: -280px;
-  background-color: #afca0b;
+  background-image: linear-gradient(to bottom, #abcc48, #607825);
   transition: 0.3s;
   overflow-y: scroll; }
   .header .header-inner {

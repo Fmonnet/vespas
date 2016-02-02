@@ -9,7 +9,9 @@
   z-index: 3;
   width: 280px;
   left: -280px;
-  background-color: rgba(175, 202, 11, 1);
+  background-image: linear-gradient(to bottom, #abcc48, #607825);
+  
+  //background-color: rgba(175, 202, 11, 1);
   transition: 0.3s;
   overflow-y: scroll;
 

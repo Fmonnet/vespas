@@ -36,11 +36,9 @@ function magalerie($output, $attr)
 
     // Now you loop through each attachment
     foreach ($attachments as $id => $attachment) {
-        // Fetch the thumbnail (or full image, it's up to you)
-//      $img = wp_get_attachment_image_src($id, 'medium');
-//      $img = wp_get_attachment_image_src($id, 'my-custom-image-size');
+
         $img = wp_get_attachment_image_src($id, 'full');
-        $thumb = wp_get_attachment_image_src($id, 'thumbnail');
+        $thumb = wp_get_attachment_image_src($id, 'medium');
 
         $output .= '<a class="galerie-item" href="'.$img[0].'">';
         $output .= '<img src="'.$thumb[0].'">';
