@@ -415,9 +415,11 @@ ul {
   background-color: #afca0b;
   transition: 0.3s;
   overflow-y: scroll; }
+  .header .header-inner {
+    padding-bottom: 60px; }
   .header .header-logo {
     display: block;
-    padding: 0 4rem; }
+    padding: 1rem 3rem; }
   .header .header-menu {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -428,15 +430,27 @@ ul {
     .header .header-menu a {
       color: #333333;
       padding: 1rem;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      transition: all .3s; }
+      .header .header-menu a:hover {
+        background-color: #fff;
+        padding-left: 1.5rem; }
   .header .header-menu a, .header .header-contact a {
     text-decoration: none;
     list-style: none;
     font-weight: 600;
     color: black; }
-  .header .header-contact a {
-    display: inline-block;
-    padding: 1.8rem 1.8rem; }
+  .header .header-contact {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem; }
+    .header .header-contact a {
+      display: inline-block;
+      text-align: center; }
+      .header .header-contact a .material-icons {
+        color: #424242; }
   @media (min-width: 1025px) {
     .header {
       display: block;

@@ -13,9 +13,14 @@
   transition: 0.3s;
   overflow-y: scroll;
 
+  .header-inner {
+    padding-bottom: 60px;
+    position: relative;
+  }
+
   .header-logo {
     display: block;
-    padding: 0 4rem;
+    padding: 1rem 3rem;
   }
 
   .header-menu {
@@ -26,6 +31,11 @@
       color: #333333;
       padding: 1rem;
       text-transform: uppercase;
+      transition:all .3s;
+      &:hover {
+        background-color: #fff;
+        padding-left: 1.5rem;
+      }
     }
   }
 
@@ -36,9 +46,20 @@
     color: black;
   }
 
-  .header-contact a {
-    display: inline-block;
-    padding: 1.8rem 1.8rem;
+  .header-contact{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    a {
+      display: inline-block;
+      text-align: center;
+
+      .material-icons{
+       color:#424242;
+      }
+    }
   }
 
   @include desktop {
