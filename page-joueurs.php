@@ -31,7 +31,7 @@ get_header();
             <a href="<?= get_permalink($joueur->ID);?>" class="card">
 
                 <div class="card-image">
-                    <?= get_the_post_thumbnail($joueur->ID); ?>
+                    <?= get_the_post_thumbnail($joueur->ID,'joueur_mini'); ?>
 
                     <div class="card-description">
                         <?php $metas = get_post_meta($joueur->ID); ?>

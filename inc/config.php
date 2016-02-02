@@ -9,6 +9,8 @@
 
 
 	// active les miniatures pour les articles
-	add_theme_support( 'post-thumbnails' ); 
+	add_theme_support( 'post-thumbnails' );
+
+add_image_size('joueur_mini', 640, 480, true);
 
  ?>
