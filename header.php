@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes"/>
     <title>Vespas Handball</title>
     <link rel="stylesheet" href="<?= get_stylesheet_uri(); ?>">
+    <link rel="icon" type="image/png" href="<?= get_template_directory_uri();?>/img/favicon.png">
 
 </head>
 <body>
