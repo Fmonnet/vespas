@@ -383,7 +383,7 @@ ul {
 .gotop {
   display: block;
   position: fixed;
-  background: #AFCA0B;
+  background: #607825;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -391,11 +391,10 @@ ul {
   right: 1rem;
   z-index: 5;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out; }
+  transition: opacity 0.3s ease-in-out;
+  color: #fff; }
   .gotop .material-icons {
-    color: black;
-    font-size: 40px;
-    line-height: 40px; }
+    font-size: 40px; }
 
 .gotop-visible {
   opacity: 1; }
@@ -456,14 +455,16 @@ ul {
       text-align: center;
       padding: 1rem;
       margin-left: 1rem;
-      color: #424242;
+      color: #fff;
       border-radius: 50%;
       transition: all .3s; }
       .header .header-contact a .material-icons {
-        color: inherit; }
+        color: inherit;
+        display: inline-block;
+        vertical-align: middle; }
       .header .header-contact a:hover, .header .header-contact a:focus {
         background-color: #FAFAFA;
-        color: #afca0b; }
+        color: #607825; }
   @media (min-width: 1025px) {
     .header {
       display: block;
@@ -528,9 +529,7 @@ ul {
     margin: 0; }
   @media (min-width: 1025px) {
     .main .title {
-      position: static; }
-      .main .title h1 {
-        margin-left: 40px; } }
+      position: static; } }
 
 .main .slider {
   padding-top: 60px; }

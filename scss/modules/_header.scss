@@ -10,7 +10,7 @@
   width: 280px;
   left: -280px;
   background-image: linear-gradient(to bottom, #abcc48, #607825);
-  
+
   //background-color: rgba(175, 202, 11, 1);
   transition: 0.3s;
   overflow-y: scroll;
@@ -64,17 +64,19 @@
       text-align: center;
       padding: 1rem;
       margin-left: 1rem;
-      color:#424242;
+      color:#fff;
       border-radius: 50%;
       transition: all .3s;
 
       .material-icons{
        color:inherit;
+        display: inline-block;
+        vertical-align: middle;
       }
 
       &:hover, &:focus {
         background-color:#FAFAFA;
-        color:#afca0b;
+        color:$vert2;
       }
     }
   }
