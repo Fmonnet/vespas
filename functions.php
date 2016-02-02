@@ -2,6 +2,8 @@
 
 require_once('inc/config.php');
 
+require_once('inc/partenaires.php');
+
 require_once('inc/slider.php');
 
 require_once('inc/MenuWalker.php');
